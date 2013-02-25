@@ -21,6 +21,7 @@ L.HtmlIcon = L.Icon.extend({
 
 	createIcon: function () {
 		var div = document.createElement('div');
+                div.style.position = 'absolute'; 
 		div.innerHTML = this.options.html;
 		return div;
 	},
